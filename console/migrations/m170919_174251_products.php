@@ -9,8 +9,8 @@ class m170919_174251_products extends Migration
         $this->createTable('products',[
             'id' => $this->primaryKey(),
             'ASIN' => $this->string(10),
-            'Title' => $this->string(),
-            'Price' => $this->decimal(5,2),
+            'Title' => $this->string(600),
+            'Price' => $this->decimal(8,2),
             'Picture' => $this->string(200),
             'EAN' => $this->string(13),
             'Brand'=>$this->string(200),
